@@ -3,6 +3,15 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
   return (
     <div className="App">
       {/* SECÇÃO 1: MENU PRINCIPAL */}
@@ -10,10 +19,10 @@ function App() {
         {/* NAVEGAÇÃO */}
         <nav className="menu-linguas">
           <div className="menu">
-            <a href="#">Início</a>
-            <a href="#missão">Missão</a>
-            <a href="#foco">Foco</a>
-            <a href="#form">Contacte-nos</a>
+            <a href="#" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>Início</a>
+            <a href="#missão" onClick={(e) => {e.preventDefault(); scrollToSection('missão')}}>Missão</a>
+            <a href="#foco" onClick={(e) => {e.preventDefault(); scrollToSection('foco')}}>Foco</a>
+            <a href="#form" onClick={(e) => {e.preventDefault(); scrollToSection('form')}}>Contacte-nos</a>
           </div>
           {/* LINGUAS */}
           <div className="linguas">
@@ -40,7 +49,7 @@ function App() {
             Personalizando o seu <br />
             investimento
           </h3>
-          <a href="#form"> Contacte-nos</a>
+          <a href="#form" onClick={(e) => {e.preventDefault(); scrollToSection('form')}}> Contacte-nos</a>
         </div>
       </div>
 
