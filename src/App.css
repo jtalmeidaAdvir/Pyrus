@@ -479,18 +479,6 @@ hr{
         padding: 15px 40px;
     }
 
-    .missão{
-        height: auto;
-        min-height: 100vh;
-        padding-bottom: 40px;
-    }
-
-    .container-missão{
-        height: auto;
-        min-height: calc(100vh - 80px);
-        padding-bottom: 40px;
-    }
-
     .missão-texto h2{
         font-size: 28px;
     }
@@ -503,17 +491,8 @@ hr{
         font-size: 24px;
     }
 
-    .missão-info{
-        margin-bottom: 40px;
-    }
-
     .missão-info-extra h3{
         font-size: 40px;
-    }
-
-    .foco{
-        margin-top: 40px;
-        clear: both;
     }
 
     .container-foco{
