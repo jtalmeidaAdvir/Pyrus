@@ -428,6 +428,25 @@ hr{
         padding: 15px 40px;
     }
 
+    .missão{
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+
+    .container-missão{
+        height: auto;
+        min-height: auto;
+        max-height: none;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .missão-texto{
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
     .missão-texto h2{
         font-size: 28px;
     }
@@ -436,16 +455,49 @@ hr{
         font-size: 22px;
     }
 
+    .missão-texto p{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
     #MissãoFrase{
-        font-size: 24px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .missão-slider-img-grid{
+        margin: 20px 0;
+    }
+
+    .missão-slider-img img{
+        width: 200px;
+        margin-bottom: -30px;
+    }
+
+    .missão-slider-img h2{
+        font-size: 14px;
+    }
+
+    .missão-info{
+        margin: 30px 0;
+        gap: 30px;
+        justify-content: center;
     }
 
     .missão-info-extra h3{
-        font-size: 40px;
+        font-size: 36px;
+    }
+
+    .missão-info-extra p{
+        font-size: 14px;
+    }
+
+    .foco{
+        margin-top: 0;
     }
 
     .container-foco{
-        padding: 20px 15px;
+        padding: 30px 15px 20px 15px;
     }
 
     .container-foco h2{
@@ -506,8 +558,17 @@ hr{
         padding: 12px 30px;
     }
 
+    .missão{
+        padding: 15px 0;
+    }
+
+    .container-missão{
+        padding: 15px;
+        gap: 25px;
+    }
+
     .missão-texto{
-        padding: 15px 20px;
+        padding: 15px;
     }
 
     .missão-texto h2{
@@ -518,8 +579,35 @@ hr{
         font-size: 18px;
     }
 
+    .missão-texto p{
+        font-size: 14px;
+    }
+
     #MissãoFrase{
-        font-size: 20px;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .missão-slider-img img{
+        width: 150px;
+        margin-bottom: -20px;
+    }
+
+    .missão-slider-img h2{
+        font-size: 12px;
+    }
+
+    .missão-info{
+        gap: 20px;
+        margin: 20px 0;
+    }
+
+    .missão-info-extra h3{
+        font-size: 30px;
+    }
+
+    .missão-info-extra p{
+        font-size: 12px;
     }
 
     .container-foco h2{
