@@ -306,10 +306,9 @@ function App() {
       {/* FORMULÁRIO */}
       <div id="form" className="secção formulário">
         <div className="container-formulário">
-          <h2>Contacte-nos</h2>
-          <h3>Faça Uma Solicitação</h3>
-
-          <form action="action_page.php" method="POST" className="form-contacto">
+          <div className="contactos-layout">
+            <div className="contactos-form">
+              <form action="action_page.php" method="POST" className="form-contacto">
             
             <div className="form-group">
               <label htmlFor="solicitação">Tipo de Solicitação:</label>
@@ -426,7 +425,14 @@ function App() {
             <div className="form-group">
               <button type="submit" className="submit-btn">Enviar Solicitação</button>
             </div>
-          </form>
+              </form>
+            </div>
+            
+            <div className="contactos-titles">
+              <h2>Contacte-nos</h2>
+              <h3>Faça Uma Solicitação</h3>
+            </div>
+          </div>
         </div>
       </div>
 
