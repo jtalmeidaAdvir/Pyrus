@@ -225,38 +225,26 @@ hr{
 /* SECÇÃO 3 - O NOSSO FOCO */
 
 .foco{
-    width: 100%;
-    max-width: 100vw;
+    position: relative;
+    z-index: 10;
+    margin-top: 0;
+    clear: both;
 }
 
 .container-foco{
-    width: 100%;
-    height: 100vh;
-    padding: 40px 30px;
+    padding: 40px 30px 20px 30px;
     text-align: center;
     background-color: #123241ce;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .container-foco h2{
     font-size: 40px;
-    margin-bottom: 40px;
 }
 
 .foco-main{
     display: flex;
     gap: 20px;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.foco-main-block{
-    flex: 1;
-    min-width: 250px;
-    max-width: 350px;
 }
 
 .foco-main-block img{
@@ -268,7 +256,6 @@ hr{
     text-align: center;
     align-items: center;
     justify-content: center;
-    gap: 10px;
 }
 
 .foco-main-block-text img{
@@ -281,59 +268,35 @@ hr{
 }
 
 .foco-descr{
-    width: 100%;
-    height: 100vh;
     background-color: #d9d9d9;
     color: black;
-    padding: 40px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .foco-descr ul{
-    width: 100%;
-    max-width: 1200px;
+    margin: 20px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 40px;
-    row-gap: 30px;
+    row-gap: 20px;
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .list-style{
     list-style: none;
     display: flex;
     gap: 20px;
-    align-items: flex-start;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
 .list-style img{
-    width: 80px;
-    flex-shrink: 0;
-}
-
-.list-style div{
-    flex: 1;
+    width: 100px;
 }
 
 .list-style h4{
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #123241;
-}
-
-.list-style p{
-    font-size: 16px;
-    margin: 0;
-    color: #333;
+    font-size: 22px;
+    margin-bottom: -10px;
 }
 
 /* RODAPÉ */
@@ -402,12 +365,6 @@ hr{
         grid-row: 3;
     }
 
-    .container-foco{
-        height: auto;
-        min-height: 100vh;
-        padding: 60px 20px;
-    }
-
     .foco-main{
         flex-direction: column;
         gap: 30px;
@@ -415,19 +372,11 @@ hr{
 
     .foco-main-block{
         width: 100%;
-        max-width: none;
-    }
-
-    .foco-descr{
-        height: auto;
-        min-height: 100vh;
-        padding: 60px 20px;
     }
 
     .foco-descr ul{
         grid-template-columns: 1fr;
         gap: 20px;
-        max-width: none;
     }
 
     .rodapé{
@@ -511,47 +460,22 @@ hr{
         width: 120px;
     }
 
-    .container-foco{
-        padding: 40px 15px;
-    }
-
-    .container-foco h2{
-        font-size: 32px;
-    }
-
-    .foco-main-block img{
-        width: 120px;
-    }
-
-    .foco-main-block h3{
-        font-size: 20px;
-    }
-
-    .foco-descr{
-        padding: 40px 15px;
-    }
-
     .list-style{
         flex-direction: row;
         text-align: left;
         gap: 15px;
-        margin-bottom: 0;
+        margin-bottom: 30px;
         align-items: flex-start;
-        padding: 15px;
     }
 
     .list-style img{
-        width: 60px;
+        width: 80px;
         flex-shrink: 0;
     }
 
     .list-style h4{
-        font-size: 16px;
-        margin-bottom: 8px;
-    }
-
-    .list-style p{
-        font-size: 14px;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
 
     .list-style div{
@@ -606,34 +530,21 @@ hr{
         font-size: 18px;
     }
 
-    .container-foco h2{
-        font-size: 28px;
-    }
-
-    .foco-main-block h3{
-        font-size: 18px;
-    }
-
     .list-style{
         flex-direction: column;
         text-align: center;
         gap: 10px;
-        margin-bottom: 0;
-        padding: 20px 15px;
+        margin-bottom: 25px;
     }
 
     .list-style img{
-        width: 50px;
+        width: 60px;
         align-self: center;
     }
 
     .list-style h4{
-        font-size: 14px;
-        margin-bottom: 8px;
-    }
-
-    .list-style p{
-        font-size: 12px;
+        font-size: 16px;
+        margin-bottom: 5px;
     }
 
     .rodapé{
