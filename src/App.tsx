@@ -303,9 +303,121 @@ function App() {
       </div>
 
       {/* FORMULÁRIO */}
-      <div id="form" className="SECÇÃO">
-        <h3>Contacte-nos</h3>
-        <h4>Faça uma solicitação</h4>
+      <div id="form" className="secção formulário">
+        <div className="container-formulário">
+          <h2>Contacte-nos</h2>
+          <h3>Faça Uma Solicitação</h3>
+
+          <form action="action_page.php" method="POST" className="form-contacto">
+            
+            <div className="form-group">
+              <label htmlFor="solicitação">Tipo de Solicitação:</label>
+              <div className="checkbox-group">
+                <label className="checkbox-label">
+                  <input type="checkbox" name="vender-imóvel" value="1" onClick={(e) => {
+                    const checkboxes = document.querySelectorAll('input[type="checkbox"][name^="vender-imóvel"], input[type="checkbox"][name^="parceiro-projeto"], input[type="checkbox"][name^="comprar-imóvel"], input[type="checkbox"][name^="outro"]');
+                    checkboxes.forEach(cb => {
+                      if (cb !== e.target) (cb as HTMLInputElement).checked = false;
+                    });
+                  }} />
+                  Quero vender um imóvel
+                </label>
+                <label className="checkbox-label">
+                  <input type="checkbox" name="parceiro-projeto" value="2" onClick={(e) => {
+                    const checkboxes = document.querySelectorAll('input[type="checkbox"][name^="vender-imóvel"], input[type="checkbox"][name^="parceiro-projeto"], input[type="checkbox"][name^="comprar-imóvel"], input[type="checkbox"][name^="outro"]');
+                    checkboxes.forEach(cb => {
+                      if (cb !== e.target) (cb as HTMLInputElement).checked = false;
+                    });
+                  }} />
+                  Procuro um parceiro para o desenvolvimento de um projeto
+                </label>
+                <label className="checkbox-label">
+                  <input type="checkbox" name="comprar-imóvel" value="3" onClick={(e) => {
+                    const checkboxes = document.querySelectorAll('input[type="checkbox"][name^="vender-imóvel"], input[type="checkbox"][name^="parceiro-projeto"], input[type="checkbox"][name^="comprar-imóvel"], input[type="checkbox"][name^="outro"]');
+                    checkboxes.forEach(cb => {
+                      if (cb !== e.target) (cb as HTMLInputElement).checked = false;
+                    });
+                  }} />
+                  Quero comprar um imóvel
+                </label>
+                <div className="outro-option">
+                  <label className="checkbox-label">
+                    <input type="checkbox" name="outro" value="4" onClick={(e) => {
+                      const checkboxes = document.querySelectorAll('input[type="checkbox"][name^="vender-imóvel"], input[type="checkbox"][name^="parceiro-projeto"], input[type="checkbox"][name^="comprar-imóvel"], input[type="checkbox"][name^="outro"]');
+                      checkboxes.forEach(cb => {
+                        if (cb !== e.target) (cb as HTMLInputElement).checked = false;
+                      });
+                    }} />
+                    Outro
+                  </label>
+                  <input type="text" id="outro-texto" placeholder="Introduza texto" className="outro-input" />
+                </div>
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="assunto">Assunto:</label>
+              <input type="text" id="assunto" name="assunto" placeholder="Insira aqui o seu texto" required />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="descrição">Descrição:</label>
+              <textarea id="descrição" name="descrição" placeholder="Insira aqui o seu texto" required rows={4}></textarea>
+            </div>
+
+            <div className="form-group">
+              <label className="checkbox-label">
+                <input type="checkbox" id="contacto" name="contacto" />
+                Marcação de Contacto (opcional)
+              </label>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="reunião-data">Sugestão de Data para reunião/visita:</label>
+              <input type="date" id="reunião-data" name="reunião-data" />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="reunião-hora">Sugestão de Hora para reunião/visita:</label>
+              <input type="time" id="reunião-hora" name="reunião-hora" />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" placeholder="Nome" required />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="telemóvel">Telemóvel:</label>
+              <input type="tel" id="telemóvel" name="telemóvel" placeholder="Telemóvel" required />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Email" required />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="contacto-preferência">Deseja ser contactado por:</label>
+              <select name="contacto-preferência" id="contacto-preferência">
+                <option value="email">E-mail</option>
+                <option value="telemóvel">Telemóvel</option>
+                <option value="WhatsApp">WhatsApp</option>
+              </select>
+            </div>
+
+            <div className="form-group rgpd-group">
+              <label className="checkbox-label">
+                <input type="checkbox" id="RGPD" name="RGPD" required />
+                Autorizo a recolha e o tratamento dos meus dados pessoais para os fins indicados, em conformidade com o Regulamento Geral sobre a Proteção de Dados (RGPD).
+              </label>
+            </div>
+
+            <div className="form-group">
+              <button type="submit" className="submit-btn">Enviar Solicitação</button>
+            </div>
+          </form>
+        </div>
       </div>
 
       {/* RODAPÉ */}

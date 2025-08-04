@@ -368,6 +368,178 @@ hr {
     width: 100%;
 }
 
+/* FORMULÁRIO */
+.formulário {
+    background-color: #123241;
+    padding: clamp(40px, 8vw, 80px) clamp(20px, 5vw, 40px);
+}
+
+.container-formulário {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container-formulário h2 {
+    font-size: clamp(32px, 6vw, 48px);
+    text-align: center;
+    margin-bottom: clamp(10px, 2vw, 20px);
+}
+
+.container-formulário h3 {
+    font-size: clamp(24px, 4vw, 32px);
+    text-align: center;
+    margin-bottom: clamp(30px, 6vw, 50px);
+    font-weight: normal;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 4vw, 30px);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(8px, 1.5vw, 12px);
+}
+
+.form-group label {
+    font-size: clamp(16px, 3vw, 18px);
+    font-weight: 500;
+    color: #f7f7f7;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="time"],
+.form-group textarea,
+.form-group select {
+    padding: clamp(12px, 2.5vw, 15px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: clamp(14px, 2.5vw, 16px);
+    background-color: #f7f7f7;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="date"]:focus,
+.form-group input[type="time"]:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 2vw, 15px);
+    margin-top: clamp(8px, 1.5vw, 12px);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(8px, 1.5vw, 12px);
+    font-size: clamp(14px, 2.5vw, 16px);
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin: 0;
+    flex-shrink: 0;
+    width: clamp(16px, 3vw, 18px);
+    height: clamp(16px, 3vw, 18px);
+    margin-top: 2px;
+}
+
+.outro-option {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(8px, 1.5vw, 10px);
+}
+
+.outro-input {
+    padding: clamp(8px, 1.5vw, 10px);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: clamp(14px, 2.5vw, 16px);
+    background-color: #f7f7f7;
+    color: #333;
+    margin-left: clamp(24px, 4.5vw, 30px);
+}
+
+.rgpd-group {
+    margin-top: clamp(20px, 4vw, 30px);
+    padding: clamp(15px, 3vw, 20px);
+    background-color: rgba(247, 247, 247, 0.05);
+    border-radius: 5px;
+    border: 1px solid rgba(247, 247, 247, 0.1);
+}
+
+.rgpd-group .checkbox-label {
+    font-size: clamp(12px, 2.2vw, 14px);
+    line-height: 1.5;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: clamp(15px, 3vw, 20px) clamp(30px, 6vw, 40px);
+    border: none;
+    border-radius: 5px;
+    font-size: clamp(16px, 3vw, 18px);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: clamp(20px, 4vw, 30px);
+    align-self: center;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive adjustments for form */
+@media screen and (min-width: 768px) {
+    .checkbox-group {
+        flex-direction: column;
+    }
+    
+    .outro-option {
+        flex-direction: row;
+        align-items: center;
+        gap: clamp(15px, 3vw, 20px);
+    }
+    
+    .outro-input {
+        margin-left: 0;
+        flex: 1;
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .form-contacto {
+        gap: clamp(25px, 4vw, 35px);
+    }
+}
+
 /* RODAPÉ */
 .rodapé {
     background-color: #154157;
