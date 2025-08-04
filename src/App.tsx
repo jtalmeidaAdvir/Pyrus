@@ -1,8 +1,10 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -11,6 +13,10 @@ function App() {
         block: 'start'
       });
     }
+  };
+
+  const toggleSection = (section: string) => {
+    setActiveSection(activeSection === section ? null : section);
   };
   return (
     <div className="App">
@@ -112,37 +118,50 @@ function App() {
         <div className="container-foco">
           <h2>O Nosso Foco</h2>
           <div className="foco-main">
-            <div className="foco-main-block foco-main-1">
+            <div className="foco-main-block foco-main-1" onClick={() => toggleSection('projeto')}>
               <img className="foco-main-img" src="img/Foco/foco-projeto-main.png" alt="Icon - Aquisição e Desenvolvimento de Projetos" />
               
               <div className="foco-main-block-text">
                 <h3>Aquisição e Desenvolvimento de Projetos</h3>
-                <img src="img/Foco/Down Arrow.svg" alt="mais" />
+                <img 
+                  src="img/Foco/Down Arrow.svg" 
+                  alt="mais" 
+                  className={`arrow ${activeSection === 'projeto' ? 'rotated' : ''}`}
+                />
               </div>
             </div>
            
-            <div className="foco-main-block foco-main-2">
-              <img className="foco-main-img" src="img/Foco/foco-transações-main.png" alt="Icon - Aquisição e Desenvolvimento de Projetos" />
+            <div className="foco-main-block foco-main-2" onClick={() => toggleSection('transacoes')}>
+              <img className="foco-main-img" src="img/Foco/foco-transações-main.png" alt="Icon - Apoio em Negociações e Transações" />
               
               <div className="foco-main-block-text">
                 <h3>Apoio em Negociações e Transações</h3>
-                <img src="img/Foco/Down Arrow.svg" alt="mais" />
+                <img 
+                  src="img/Foco/Down Arrow.svg" 
+                  alt="mais" 
+                  className={`arrow ${activeSection === 'transacoes' ? 'rotated' : ''}`}
+                />
               </div>
             </div>
 
-            <div className="foco-main-block foco-main-3">
-              <img className="foco-main-img" src="img/Foco/foco-investimentos-main.png" alt="Icon - Aquisição e Desenvolvimento de Projetos" />
+            <div className="foco-main-block foco-main-3" onClick={() => toggleSection('investimentos')}>
+              <img className="foco-main-img" src="img/Foco/foco-investimentos-main.png" alt="Icon - Gestão Personalizada de Investimentos" />
               
               <div className="foco-main-block-text">
                 <h3>Gestão Personalizada de Investimentos</h3>
-                <img src="img/Foco/Down Arrow.svg" alt="mais" />
+                <img 
+                  src="img/Foco/Down Arrow.svg" 
+                  alt="mais" 
+                  className={`arrow ${activeSection === 'investimentos' ? 'rotated' : ''}`}
+                />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="foco-descr foco-descr-projeto">
-          <ul>
+        {activeSection === 'projeto' && (
+          <div className="foco-descr foco-descr-projeto">
+            <ul>
             <li className="list-style">
               <img src="img/Foco/foco-projeto-1.png" alt="logo1" />
               <div>
@@ -185,9 +204,11 @@ function App() {
               </div>
             </li>
           </ul>
-        </div>
+          </div>
+        )}
 
-        <div className="foco-descr foco-descr-transações">
+        {activeSection === 'transacoes' && (
+          <div className="foco-descr foco-descr-transações">
           <ul>
             <li className="list-style">
               <img src="img/Foco/foco-transações-1.png" alt="logo1" />
@@ -230,9 +251,11 @@ function App() {
               </div>
             </li>
           </ul>
-        </div>
+          </div>
+        )}
 
-        <div className="foco-descr foco-descr-investimentos">
+        {activeSection === 'investimentos' && (
+          <div className="foco-descr foco-descr-investimentos">
           <ul>
             <li className="list-style">
               <img src="img/Foco/foco-investimentos-1.png" alt="logo1" />
@@ -275,7 +298,8 @@ function App() {
               </div>
             </li>
           </ul>
-        </div>
+          </div>
+        )}
       </div>
 
       {/* FORMULÁRIO */}

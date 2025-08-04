@@ -272,6 +272,12 @@ hr {
 .foco-main-block {
     width: 100%;
     max-width: 400px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.foco-main-block:hover {
+    transform: translateY(-5px);
 }
 
 .foco-main-block img {
@@ -293,6 +299,14 @@ hr {
     height: clamp(30px, 5vw, 40px);
 }
 
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.rotated {
+    transform: rotate(180deg);
+}
+
 .foco-main-block h3 {
     font-size: clamp(18px, 3.5vw, 25px);
 }
@@ -302,6 +316,18 @@ hr {
     color: black;
     width: 100%;
     padding: clamp(20px, 4vw, 40px);
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .foco-descr ul {
