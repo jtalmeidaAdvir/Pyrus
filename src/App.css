@@ -235,6 +235,8 @@ hr{
     padding: 40px 30px 20px 30px;
     text-align: center;
     background-color: #123241ce;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .container-foco h2{
@@ -245,6 +247,9 @@ hr{
     display: flex;
     gap: 20px;
     align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .foco-main-block img{
@@ -273,7 +278,7 @@ hr{
 }
 
 .foco-descr ul{
-    margin: 20px 20px;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -281,6 +286,7 @@ hr{
     row-gap: 20px;
     list-style: none;
     padding: 0;
+    max-width: 1000px;
 }
 
 .list-style{
