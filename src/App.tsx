@@ -17,9 +17,11 @@ function App() {
           </div>
           {/* LINGUAS */}
           <div className="linguas">
-            <a href="#">PT</a>
-            <a href="#">EN</a>
-            <a href="#">ES</a>
+            <select className="lingua-select" defaultValue="PT">
+              <option value="PT">PT</option>
+              <option value="EN">EN</option>
+              <option value="ES">ES</option>
+            </select>
           </div>
         </nav>
         {/* LOGO + HEADLINES */}

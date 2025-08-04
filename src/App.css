@@ -61,6 +61,21 @@ a:hover{
     text-align: center;
 }
 
+.lingua-select {
+    background-color: transparent;
+    color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    font-size: 22px;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.lingua-select option {
+    background-color: #123241;
+    color: #f7f7f7;
+}
+
 .menu{
     margin-right: 80px;
     margin-left: 80px;
