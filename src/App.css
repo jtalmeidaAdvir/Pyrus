@@ -265,6 +265,9 @@ hr{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 40px;
+    row-gap: 20px;
+    list-style: none;
+    padding: 0;
 }
 
 .list-style{
@@ -445,17 +448,25 @@ hr{
     }
     
     .list-style{
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        text-align: left;
         gap: 15px;
+        margin-bottom: 30px;
+        align-items: flex-start;
     }
     
     .list-style img{
         width: 80px;
+        flex-shrink: 0;
     }
     
     .list-style h4{
         font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .list-style div{
+        flex: 1;
     }
     
     p{
@@ -504,6 +515,23 @@ hr{
     
     .foco-main-block h3{
         font-size: 18px;
+    }
+    
+    .list-style{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+    
+    .list-style img{
+        width: 60px;
+        align-self: center;
+    }
+    
+    .list-style h4{
+        font-size: 16px;
+        margin-bottom: 5px;
     }
     
     .rodapé{
