@@ -480,29 +480,7 @@ hr {
     }
 }
 
-/* Medium tablets and landscape phones */
-@media screen and (max-width: 900px) {
-    .container-missão {
-        padding: 15px;
-        gap: 25px;
-    }
-
-    .missão-slider-img img {
-        width: 200px;
-        margin-bottom: -30px;
-    }
-
-    .missão-info {
-        gap: 30px;
-        justify-content: center;
-    }
-
-    .missão-info-extra h3 {
-        font-size: 40px;
-    }
-}
-
-/* Medium tablets - Fix navigation overflow */
+/* Small tablets and large phones */
 @media screen and (max-width: 900px) and (min-width: 769px) {
     .menu-linguas {
         padding: 8px 15px;
@@ -526,79 +504,55 @@ hr {
         font-size: 16px;
         padding: 2px 6px;
     }
-}
 
-/* Fix for specific width issue around 832px */
-@media screen and (max-width: 850px) and (min-width: 550px) {
-    .menu-linguas {
-        padding: 8px 10px;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-
-    .menu {
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .menu a {
-        margin: 0;
-        font-size: 15px;
-        white-space: nowrap;
-    }
-
-    .linguas {
-        font-size: 15px;
-        flex-shrink: 0;
-    }
-
-    .lingua-select {
-        font-size: 15px;
-        padding: 2px 5px;
-    }
     .container-missão {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        gap: 20px;
         padding: 20px;
-        height: auto;
-        min-height: auto;
-        max-height: none;
+        gap: 25px;
     }
 
-    .missão {
-        height: auto;
-        min-height: 100vh;
-        padding: 20px 0;
-    }
-
-    .missão-texto {
-        grid-row: 1;
-        padding: 20px;
-        margin-bottom: 0;
-    }
-
-    .missão-slider-img-grid {
-        grid-row: 2;
-        margin: 20px 0;
+    .missão-slider-img img {
+        width: 200px;
+        margin-bottom: -30px;
     }
 
     .missão-info {
-        grid-row: 3;
-        margin: 20px 0;
         gap: 30px;
         justify-content: center;
     }
 
     .missão-info-extra h3 {
-        font-size: 36px;
+        font-size: 40px;
     }
 
-    .missão-info-extra p {
-        font-size: 14px;
+    .foco-main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .foco-descr ul {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Landscape phones and small tablets */
+@media screen and (max-width: 850px) and (min-width: 769px) {
+    .menu-linguas {
+        padding: 8px 10px;
+    }
+
+    .menu a {
+        margin-right: 1.5vw;
+        font-size: 15px;
+    }
+
+    .linguas {
+        font-size: 15px;
+    }
+
+    .lingua-select {
+        font-size: 15px;
+        padding: 2px 5px;
     }
 }
 
