@@ -7,7 +7,7 @@ body{
     color:#f7f7f7;
     font-family: sans-serif;
     position: relative;
-    background-image: url("/img/homepageIdea_Pyrus_background.png");
+    background-image: url("%PUBLIC_URL%/img/homepageIdea_Pyrus_background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
