@@ -360,9 +360,27 @@ hr {
 
 /* Tablets */
 @media screen and (max-width: 1024px) and (min-width: 769px) {
+    .menu-linguas {
+        padding: 10px 20px;
+    }
+
+    .menu {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
     .menu a {
-        margin-right: 3vw;
+        margin-right: 2.5vw;
         font-size: 18px;
+    }
+
+    .linguas {
+        font-size: 18px;
+    }
+
+    .lingua-select {
+        font-size: 18px;
+        padding: 3px 8px;
     }
 
     .logotipo-img {
@@ -484,8 +502,63 @@ hr {
     }
 }
 
+/* Medium tablets - Fix navigation overflow */
+@media screen and (max-width: 900px) and (min-width: 769px) {
+    .menu-linguas {
+        padding: 8px 15px;
+    }
+
+    .menu {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .menu a {
+        margin-right: 2vw;
+        font-size: 16px;
+    }
+
+    .linguas {
+        font-size: 16px;
+    }
+
+    .lingua-select {
+        font-size: 16px;
+        padding: 2px 6px;
+    }
+}
+
 /* Fix for specific width issue around 832px */
 @media screen and (max-width: 850px) and (min-width: 550px) {
+    .menu-linguas {
+        padding: 8px 10px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .menu {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .menu a {
+        margin: 0;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    .linguas {
+        font-size: 15px;
+        flex-shrink: 0;
+    }
+
+    .lingua-select {
+        font-size: 15px;
+        padding: 2px 5px;
+    }
     .container-missão {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
