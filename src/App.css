@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -185,8 +184,8 @@ hr{
 }
 
 .missão-slider-img img{
-    margin-bottom: -75px;
-    width: 300px ;
+    width: 300px;
+    margin-bottom: -50px;
 }
 
 .missão-slider-img h2{
@@ -321,15 +320,15 @@ hr{
         margin-right: 3vw;
         font-size: 18px;
     }
-    
+
     .logotipo-img{
         width: 300px;
     }
-    
+
     .logotipo h2{
         font-size: 32px;
     }
-    
+
     .container-missão{
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
@@ -338,34 +337,34 @@ hr{
         margin: 0;
         max-width: 100%;
     }
-    
+
     .missão-texto{
         grid-row: 1;
         padding: 20px 30px;
     }
-    
+
     .missão-slider-img-grid{
         grid-row: 2;
     }
-    
+
     .missão-info{
         grid-row: 3;
     }
-    
+
     .foco-main{
         flex-direction: column;
         gap: 30px;
     }
-    
+
     .foco-main-block{
         width: 100%;
     }
-    
+
     .foco-descr ul{
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .rodapé{
         flex-direction: column;
         gap: 20px;
@@ -378,13 +377,13 @@ hr{
     body{
         padding-top: 120px;
     }
-    
+
     .menu-linguas{
         flex-direction: column;
         gap: 15px;
         padding: 20px 0;
     }
-    
+
     .menu{
         margin: 0;
         display: flex;
@@ -392,61 +391,61 @@ hr{
         justify-content: center;
         gap: 15px;
     }
-    
+
     .menu a{
         margin: 0;
         font-size: 16px;
     }
-    
+
     .logotipo-img{
         width: 250px;
     }
-    
+
     .logotipo h2{
         font-size: 28px;
     }
-    
+
     .logotipo h3{
         font-size: 18px;
     }
-    
+
     .logotipo a{
         font-size: 18px;
         padding: 15px 40px;
     }
-    
+
     .missão-texto h2{
         font-size: 28px;
     }
-    
+
     .missão-texto h3{
         font-size: 22px;
     }
-    
+
     #MissãoFrase{
         font-size: 24px;
     }
-    
+
     .missão-info-extra h3{
         font-size: 40px;
     }
-    
+
     .container-foco{
         padding: 20px 15px;
     }
-    
+
     .container-foco h2{
         font-size: 32px;
     }
-    
+
     .foco-main-block h3{
         font-size: 20px;
     }
-    
+
     .foco-main-block img{
         width: 120px;
     }
-    
+
     .list-style{
         flex-direction: row;
         text-align: left;
@@ -454,21 +453,21 @@ hr{
         margin-bottom: 30px;
         align-items: flex-start;
     }
-    
+
     .list-style img{
         width: 80px;
         flex-shrink: 0;
     }
-    
+
     .list-style h4{
         font-size: 18px;
         margin-bottom: 10px;
     }
-    
+
     .list-style div{
         flex: 1;
     }
-    
+
     p{
         font-size: 16px;
     }
@@ -479,69 +478,69 @@ hr{
     .logotipo-img{
         width: 200px;
     }
-    
+
     .logotipo h2{
         font-size: 24px;
     }
-    
+
     .logotipo h3{
         font-size: 16px;
     }
-    
+
     .logotipo a{
         font-size: 16px;
         padding: 12px 30px;
     }
-    
+
     .missão-texto{
         padding: 15px 20px;
     }
-    
+
     .missão-texto h2{
         font-size: 24px;
     }
-    
+
     .missão-texto h3{
         font-size: 18px;
     }
-    
+
     #MissãoFrase{
         font-size: 20px;
     }
-    
+
     .container-foco h2{
         font-size: 28px;
     }
-    
+
     .foco-main-block h3{
         font-size: 18px;
     }
-    
+
     .list-style{
         flex-direction: column;
         text-align: center;
         gap: 10px;
         margin-bottom: 25px;
     }
-    
+
     .list-style img{
         width: 60px;
         align-self: center;
     }
-    
+
     .list-style h4{
         font-size: 16px;
         margin-bottom: 5px;
     }
-    
+
     .rodapé{
         padding: 20px 30px;
     }
-    
+
     .rodapé-contactos h4{
         font-size: 18px;
     }
-    
+
     .rodapé-contactos p{
         font-size: 12px;
     }
