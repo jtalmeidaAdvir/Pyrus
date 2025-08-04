@@ -137,12 +137,19 @@ a:hover{
 
 /* SECÇÃO 2: MISSÃO */
 
+.missão{
+    position: relative;
+    overflow: hidden;
+}
+
 .container-missão{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 0.5fr 0.5fr;
     gap: 40px;
     align-content: center;
+    height: 100%;
+    max-height: 100vh;
 }
 
 .missão-texto{
@@ -217,8 +224,15 @@ hr{
 
 /* SECÇÃO 3 - O NOSSO FOCO */
 
+.foco{
+    position: relative;
+    z-index: 10;
+    margin-top: 0;
+    clear: both;
+}
+
 .container-foco{
-    padding: 20px 30px;
+    padding: 40px 30px 20px 30px;
     text-align: center;
     background-color: #123241ce;
 }
