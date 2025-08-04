@@ -4,6 +4,7 @@ import './App.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [showContactScheduling, setShowContactScheduling] = useState<boolean>(false);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -367,20 +368,29 @@ function App() {
 
             <div className="form-group">
               <label className="checkbox-label">
-                <input type="checkbox" id="contacto" name="contacto" />
+                <input 
+                  type="checkbox" 
+                  id="contacto" 
+                  name="contacto" 
+                  onChange={(e) => setShowContactScheduling(e.target.checked)}
+                />
                 Marcação de Contacto (opcional)
               </label>
             </div>
 
-            <div className="form-group">
-              <label htmlFor="reunião-data">Sugestão de Data para reunião/visita:</label>
-              <input type="date" id="reunião-data" name="reunião-data" />
-            </div>
+            {showContactScheduling && (
+              <>
+                <div className="form-group">
+                  <label htmlFor="reunião-data">Sugestão de Data para reunião/visita:</label>
+                  <input type="date" id="reunião-data" name="reunião-data" />
+                </div>
 
-            <div className="form-group">
-              <label htmlFor="reunião-hora">Sugestão de Hora para reunião/visita:</label>
-              <input type="time" id="reunião-hora" name="reunião-hora" />
-            </div>
+                <div className="form-group">
+                  <label htmlFor="reunião-hora">Sugestão de Hora para reunião/visita:</label>
+                  <input type="time" id="reunião-hora" name="reunião-hora" />
+                </div>
+              </>
+            )}
 
             <div className="form-group">
               <label htmlFor="nome">Nome:</label>
